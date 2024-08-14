@@ -2,7 +2,7 @@
 .hero {
   padding-top: var(--spacing-8x);
   padding-bottom: var(--spacing-6x);
-  background: var(--color-bg-white) url('assets/images/hero-bg.png');
+  background: var(--color-bg-white) url('/localhost/assets/images/hero-bg.png');
   background-size: cover;
   background-position: bottom center;
 }
