@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localhost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/regular.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/property.css" />
+    <link rel="preload" href="assets/images/loading.gif" as="image">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <section class="preloader is-loading">
+        <img src="assets/images/loading.gif" alt="loader" class="preloader__img">
+    </section>
+    <!-- #Header  -->
+    <header class="header js-header">
+        <div class=" l-section-container">
+            <div class="navbar navbar-desktop is-hidden">
+                <a href="/index.html">
+                    <img src="assets/images/logo.png" alt="Localhost" class="logo" />
+                </a>
+                <ul class="l-flex-row navbar__list">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#stays" class="navbar__link">Stays</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Become a host</a>
+                    </li>
+                </ul>
+                <ul class="navbar__action l-flex-row u-align-center">
+                    <li class="navbar__item">
+                        <span class="navbar__icon"><i class="fa-regular fa-bell"></i></span>
+                        <span class="navbar__badge"></span>
+                    </li>
+                    <li class="navbar__item">
+                        <img src="assets/images/avatar.png" alt="user" class="navbar__avatar" />
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile Navbar  -->
+            <div class="mobile-navbar">
+                <div class="mobile-navbar__header l-flex-row u-align-center u-space-between">
+                    <a href="/index.html">
+                        <img src="assets/images/logo.png" alt="Localhost" class="mobile-navbar__logo" />
+                    </a>
+                    <button class="btn navbar__btn js-menu-toggler" data-type="open">
+                        <span class="navbar__icon--menu"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="mobile-navbar__menu js-menu">
+                    <div class="l-flex-row u-align-center u-space-between navbar__action">
+                        <div class="l-flex-row u-align-center u-space-between">
+                            <img src="assets/images/avatar.png" alt="user" class="navbar__avatar" />
+                            <span class="navbar__icon"><i class="fa-regular fa-bell"></i></span>
+                            <span class="navbar__badge"></span>
+                        </div>
+                        <button class="btn mobile-navbar__btn--close js-menu-toggler" data-type="close">
+                            <span><i class="fa-solid fa-times"></i></span>
+                        </button>
+                    </div>
+                    <ul class="mobile-navbar__list l-flex-column">
+                        <li>
+                            <a href="/index.html" class="navbar__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#stays" class="navbar__link">Stays</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar__link">Become a host</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #Main  -->
+    <main>
+        <!-- Property Details Section  -->
+        <section class="property">
+            <div class="l-section-container">
+                <div class="property__hero l-grid">
+                    <!-- Property Hero  -->
+                    <div class="property__gallery">
+                        <img src="assets/images/property-1.png" alt="Brightwoods Cabin"
+                            class="property__gallery-cover" />
+                        <ul class="property__gallery-list l-grid">
+                            <li class="property__gallery-item">
+                                <img src="assets/images/property-2.png" alt="Brightwoods Cabin"
+                                    class="property__gallery-img" />
+                            </li>
+                            <li class="property__gallery-item">
+                                <img src="assets/images/property-3.png" alt="Brightwoods Cabin"
+                                    class="property__gallery-img" />
+                            </li>
+                            <li class="property__gallery-item">
+                                <img src="assets/images/property-4.png" alt="Brightwoods Cabin"
+                                    class="property__gallery-img" />
+                            </li>
+                            <li class="property__gallery-item">
+                                <img src="assets/images/property-5.png" alt="Brightwoods Cabin"
+                                    class="property__gallery-img" />
+                            </li>
+                            <li class="property__gallery-item">
+                                <img src="assets/images/property-6.png" alt="Brightwoods Cabin"
+                                    class="property__gallery-img" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Property Info  -->
+                    <div class="property__info">
+                        <div class="property__info-header l-flex-row u-align-center u-space-between">
+                            <div>
+                                <h1 class="property__headline">Brightwoods Cabin</h1>
+                            </div>
+                            <button class="btn btn-icon">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                            </button>
+                        </div>
+                        <p>Bridlepath, Ontario, Canada</p>
+                        <p>
+                            <span class="rating">5.0 <i class="fa-solid fa-star rating__star"></i></span>
+                            <a href="#" class="btn btn--link property__info-link">200 Reviews</a>
+                        </p>
+                        <p class="property__description">
+                            Welcome to our cozy cabin retreat nestled in the heart of
+                            Bridlepath, Ontario! Surrounded by lush landscapes and tranquil
+                            trails, this charming getaway offers the perfect blend of rustic
+                            elegance and modern comfort.
+                        </p>
+                        <div class="l-flex-row u-space-between">
+                            <h2 class="property__price">
+                                $658<span class="property__price-text"> / night</span>
+                            </h2>
+                            <div class="l-flex-row u-align-center property__trend">
+                                <img src="assets/images/trend.png" alt="trend" class="property__trend-img" />
+                                <span>Best time to Book</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--full btn--primary property__info-btn">Book this home</button>
+                        <div class="property__host">
+                            <p class="property__host-title">Hosted by:</p>
+                            <div class="property__host-card l-flex-row u-align-center u-space-between">
+                                <div class="l-flex-row u-align-center">
+                                    <img src="assets/images/host.png" alt="host" class="property__host-avatar" />
+                                    <div>
+                                        <p class="property__host-name">Michelle Ward</p>
+                                        <p class="property__text">Joined in May 2023</p>
+                                    </div>
+                                </div>
+                                <div class="l-flex-row u-align-center superhost">
+                                    <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img" />
+                                    <span class="superhost__text">Superhost</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Details  -->
+                <div class="property__details l-grid">
+                    <div>
+                        <h3 class="property__subhead">About this home</h3>
+                        <div class="property__details-block l-flex-column js-details">
+                            <p>
+                                Welcome to Brightwoods Cabin, your idyllic retreat nestled in
+                                the heart of Bridlepath, Ontario! Our cozy cabin, surrounded
+                                by the tranquility of nature's embrace, is designed to provide
+                                the ultimate relaxing getaway.
+                            </p>
+                            <p>
+                                <span class="property__text--bold">Living Space:</span> This
+                                charming cabin boasts a spacious living area adorned with
+                                rustic decor and modern amenities. Enjoy the warmth of the
+                                wood-burning fireplace, relax on the plush sofas, and make
+                                yourself at home with our entertainment center featuring a
+                                flat-screen TV, WiFi, and more.
+                            </p>
+                            <p>
+                                <span class="property__text--bold">Bedrooms:</span> Bedrooms:
+                                With 3 beautifully appointed bedrooms, our cabin comfortably
+                                accommodates up to [number of guests]. Each room is furnished
+                                with luxurious bedding and unique woodland-inspired touches to
+                                ensure a restful slumber.
+                            </p>
+                            <p>
+                                Welcome to Brightwoods Cabin, your idyllic retreat nestled in
+                                the heart of Bridlepath, Ontario! Our cozy cabin, surrounded
+                                by the tranquility of nature's embrace, is designed to provide
+                                the ultimate relaxing getaway.
+                            </p>
+                            <p>
+                                <span class="property__text--bold">Living Space:</span> This
+                                charming cabin boasts a spacious living area adorned with
+                                rustic decor and modern amenities. Enjoy the warmth of the
+                                wood-burning fireplace, relax on the plush sofas, and make
+                                yourself at home with our entertainment center featuring a
+                                flat-screen TV, WiFi, and more.
+                            </p>
+                            <p>
+                                <span class="property__text--bold">Bedrooms:</span> Bedrooms:
+                                With 3 beautifully appointed bedrooms, our cabin comfortably
+                                accommodates up to [number of guests]. Each room is furnished
+                                with luxurious bedding and unique woodland-inspired touches to
+                                ensure a restful slumber.
+                            </p>
+                        </div>
+                        <button class="btn btn--link property__details-link js-expand-details">Show more</button>
+                    </div>
+                    <ul class="property__features l-flex-column">
+                        <li class="property__features-item l-flex-row u-align-center">
+                            <img src="assets/images/workspace.png" alt="Dedicated workspace"
+                                class="property__features-img" />
+                            <div>
+                                <h4 class="property__title">Dedicated workhouse</h4>
+                                <p>
+                                    A private room equipped with WiFi
+                                </p>
+                            </div>
+                        </li>
+                        <li class="property__features-item l-flex-row u-align-center">
+                            <img src="assets/images/checkin.png" alt="Self checkin" class="property__features-img" />
+                            <div>
+                                <h4 class="property__title">Self check-in</h4>
+                                <p">Check in with just your phone</p>
+                            </div>
+                        </li>
+                        <li class="property__features-item l-flex-row u-align-center">
+                            <img src="assets/images/cancellation.png" alt="Free cancellation"
+                                class="property__features-img" />
+                            <div>
+                                <h4 class="property__title">Free cancellation</h4>
+                                <p>Cancel anytime</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Property Location Amenities  -->
+                <div class="property__location">
+                    <h3 class="property__subhead">Amenities</h3>
+                    <div class="property__location-inner l-grid">
+                        <div>
+                            <div class="property__amenities l-flex-column u-space-between">
+                                <ul class="property__amenities-list l-flex-column">
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-water"></i></span>
+                                        <p>Lakeside</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-spoon"></i></span>
+                                        <p>Kitchen</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-camera"></i></span>
+                                        <p>Security cameras on property</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <p>Wifi</p>
+                                    </li>
+                                </ul>
+                                <ul class="property__amenities-list l-flex-column">
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-water"></i></span>
+                                        <p>Free parking</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-spoon"></i></span>
+                                        <p>Kitchen</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-camera"></i></span>
+                                        <p>Hot Water</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <p>Wifi</p>
+                                    </li>
+                                </ul>
+                                <ul class="property__amenities-list l-flex-column">
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-water"></i></span>
+                                        <p>Fire Extinguisher</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-spoon"></i></span>
+                                        <p>Freezer</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-camera"></i></span>
+                                        <p>Coffee Maker</p>
+                                    </li>
+                                    <li class="property__amenities-item l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <p>Glass stove</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--sm btn--secondary property__amenities-btn">
+                                Show all amenities
+                            </button>
+                        </div>
+                        <div class="property__map">
+                            <div class="property__map-info l-flex-row u-space-between">
+                                <div>
+                                    <h3 class="property__subhead property__subhead--map">
+                                        Where you'll be
+                                    </h3>
+                                    <div class="l-flex-row u-align-center">
+                                        <span><i class="fa-solid fa-location-dot property__location-icon"></i></span>
+                                        <p>The Bridle path</p>
+                                    </div>
+                                </div>
+
+                                <div class="l-flex-row u-align-center property__whether">
+                                    <img src="assets/images/Cloud.png" alt="whether condition"
+                                        class="property__whether-img" />
+                                    <div>
+                                        <p>20°C</p>
+                                        <p class="property__text">Broken clouds</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/map.png" alt="" class="property__map-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Property Reviews Section  -->
+        <section class="reviews">
+            <div class="l-section-container">
+                <div class="l-flex-row u-space-between u-align-center">
+                    <h3 class="reviews__subhead property__subhead">Reviews</h3>
+                    <button class="btn btn--small btn--link">View all</button>
+                </div>
+                <div class="reviews__inner">
+                    <ul class="reviews__list l-grid">
+                        <li class="reviews__item">
+                            <div class="reviews__header l-flex-row u-space-between u-align-center">
+                                <div class="reviews__user l-flex-row u-align-center">
+                                    <img src="assets/images/review-1.png" alt="Verified user" class="reviews__img" />
+                                    <div>
+                                        <h4 class="reviews__name">Johnny Cash</h4>
+                                        <span class="reviews__date">June 2023</span>
+                                    </div>
+                                </div>
+                                <span class="rating">
+                                    4.8<i class="fa-solid fa-star rating__star"></i>
+                                </span>
+                            </div>
+                            <p>
+                                Michelle’s place was so great and definitely the perfect place
+                                for our long weekend. The lake is amazing!
+                            </p>
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__header l-flex-row u-space-between u-align-center">
+                                <div class="reviews__user l-flex-row u-align-center">
+                                    <img src="assets/images/review-2.png" alt="Verified user" class="reviews__img" />
+                                    <div>
+                                        <h4 class="reviews__name">Yuta Watanabe</h4>
+                                        <span class="reviews__date">May 2023</span>
+                                    </div>
+                                </div>
+                                <span class="rating">
+                                    5.0<i class="fa-solid fa-star rating__star"></i>
+                                </span>
+                            </div>
+                            <p>
+                                The location is perfect. I love the lake so much!!! This is
+                                one of the best stays we had for a while. Definitely
+                                recommended.
+                            </p>
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__header l-flex-row u-space-between u-align-center">
+                                <div class="reviews__user l-flex-row u-align-center">
+                                    <img src="assets/images/review-3.png" alt="Verified user" class="reviews__img" />
+                                    <div>
+                                        <h4 class="reviews__name">Shane Willis</h4>
+                                        <span class="reviews__date">December 2022</span>
+                                    </div>
+                                </div>
+                                <span class="rating">
+                                    4.8<i class="fa-solid fa-star rating__star"></i>
+                                </span>
+                            </div>
+                            <p>
+                                A great place overall. One of the nicest place in town for
+                                sure. I will come back in the next few months with my family
+                                :)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Similar Stays Section  -->
+        <section class="stays" id="stays">
+            <div class="l-section-container">
+                <div class="l-flex-row u-space-between u-align-center stays__header">
+                    <h3 class="stays__subhead property__subhead">Similar Stays</h3>
+                    <button class="btn btn--small btn--link">View all</button>
+                </div>
+                <div class="stays__inner">
+                    <ul class="stays__list l-grid">
+                        <li class="stays__item">
+                            <a class="l-flex-column stays__link" href="/property.html">
+                                <div class="stays__cover">
+                                    <img src="assets/images/similar-1.png" alt="Aistream" class="stays__img" />
+                                    <button class="btn btn-icon stays__btn">
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </button>
+                                </div>
+                                <div class="stays__info">
+                                    <h4 class="stays__title">Missisuaga Aistream</h4>
+                                    <p>Missisauga, Ontario, Canada</p>
+                                    <span class="rating">
+                                        4.8<i class="fa-solid fa-star rating__star"></i>
+                                    </span>
+                                    <p class="stays__price">
+                                        <span>$502</span><span class="stays__text"> / night | <i
+                                                class="fa-regular fa-user"></i> 2
+                                            guests</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="stays__item">
+                            <a class="l-flex-column stays__link" href="/property.html">
+                                <div class="stays__cover">
+                                    <img src="assets/images/similar-2.png" alt="Urban Loft" class="stays__img" />
+                                    <div class="stays__action l-flex-row u-space-between u-align-center">
+                                        <div class="l-flex-row u-align-center superhost stays__label">
+                                            <img src="assets/images/superhost.png" alt="supperhost"
+                                                class="superhost__img stays__label-img" />
+                                            <span class="superhost__text">Superhost</span>
+                                        </div>
+                                        <button class="btn btn-icon stays__btn">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="stays__info">
+                                    <h4 class="stays__title">Urban Loft</h4>
+                                    <p>Urban Loft</p>
+                                    <span class="rating">
+                                        4.8<i class="fa-solid fa-star rating__star"></i>
+                                    </span>
+                                    <p class="stays__price">
+                                        <span>$502</span>
+                                        <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                                            guests</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="stays__item">
+                            <a class="l-flex-column stays__link" href="/property.html">
+                                <div class="stays__cover">
+                                    <img src="assets/images/similar-3.png" alt="Urban Loft" class="stays__img" />
+                                    <div class="stays__action l-flex-row u-space-between u-align-center">
+                                        <div class="l-flex-row u-align-center superhost stays__label">
+                                            <img src="assets/images/superhost.png" alt="supperhost"
+                                                class="superhost__img stays__label-img" />
+                                            <span class="superhost__text">Superhost</span>
+                                        </div>
+                                        <button class="btn btn-icon stays__btn">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="stays__info">
+                                    <h4 class="stays__title">Forestville Cottages</h4>
+                                    <p>Simcoe, Ontario Canada</p>
+                                    <span class="rating">
+                                        4.8<i class="fa-solid fa-star rating__star"></i>
+                                    </span>
+                                    <p class="stays__price">
+                                        <span>$502</span>
+                                        <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                                            guests</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section  -->
+        <section class="footer">
+            <div class="l-section-container">
+                <div class="footer__wrapper">
+                    <div class="footer__header l-grid">
+                        <div class="footer__nav l-grid">
+                            <h4 class="footer__title">Support</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Help Center</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">AirCover</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Combating discrimination</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Supporting people with disabilities</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cencellation options</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Report neighbourhood concern</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav l-grid">
+                            <h4 class="footer__title">Hosting</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Local home</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cover for hosts</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Hosting resources</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Community forum</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Hosting responsibly</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav l-grid">
+                            <h4 class="footer__title">Localhost</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Newsroom</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">New Features</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Careers</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Investres</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Gift cards</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__info l-flex-column">
+                    <p class="footer__text">
+                        © 2023 Localhost, Inc. All Rights Reserved
+                    </p>
+                    <ul class="footer__info-list l-flex-column">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JS section  -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

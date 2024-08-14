@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Localhost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome/css/solid.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome/css/regular.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/core.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preload" href="assets/images/loading.gif" as="image">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <section class="preloader is-loading">
+    <img src="assets/images/loading.gif" alt="loader" class="preloader__img">
+  </section>
+  <!-- #Header  -->
+  <header class="header js-header">
+    <div class="l-section-container">
+      <div class="navbar navbar-desktop is-hidden">
+        <img src="assets/images/logo.png" alt="Localhost" class="logo" />
+        <ul class="l-flex-row navbar__list">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__link">Stays</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__link">Become a host</a>
+          </li>
+        </ul>
+        <ul class="navbar__action l-flex-row u-align-center">
+          <li class="navbar__item">
+            <span class="navbar__icon"><i class="fa-regular fa-bell"></i></span>
+            <span class="navbar__badge"></span>
+          </li>
+          <li class="navbar__item">
+            <img src="assets/images/avatar.png" alt="user" class="navbar__avatar" />
+          </li>
+        </ul>
+      </div>
+      <!-- Mobile Navbar  -->
+      <div class="mobile-navbar">
+        <div class="mobile-navbar__header l-flex-row u-align-center u-space-between">
+          <a href="/index.html">
+            <img src="assets/images/logo.png" alt="Localhost" class="mobile-navbar__logo" />
+          </a>
+          <button class="btn navbar__btn js-menu-toggler" data-type="open">
+            <span class="navbar__icon--menu"><i class="fa-solid fa-bars"></i></span>
+          </button>
+        </div>
+        <div class="mobile-navbar__menu js-menu">
+          <div class="l-flex-row u-align-center u-space-between navbar__action">
+            <div class="l-flex-row u-align-center u-space-between">
+              <img src="assets/images/avatar.png" alt="user" class="navbar__avatar" />
+              <span class="navbar__icon"><i class="fa-regular fa-bell"></i></span>
+              <span class="navbar__badge"></span>
+            </div>
+            <button class="btn mobile-navbar__btn--close js-menu-toggler" data-type="close">
+              <span><i class="fa-solid fa-times"></i></span>
+            </button>
+          </div>
+          <ul class="mobile-navbar__list l-flex-column">
+            <li>
+              <a href="/index.html" class="navbar__link">Home</a>
+            </li>
+            <li>
+              <a href="#stays" class="navbar__link">Stays</a>
+            </li>
+            <li>
+              <a href="/index.html" class="navbar__link">Become a host</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- #Main  -->
+  <main>
+    <section class="hero">
+      <div class="l-section-container">
+        <h1 class="hero__headline">
+          Find a <span class="hero__text">host</span> for every journey
+        </h1>
+        <p class="hero__description">
+          Discover the best local rental properties that fits your every
+          travel needs
+        </p>
+        <form action="#" class="form">
+          <div class="form__wrapper l-grid">
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Accommodation" />
+              <span class="form__icon"><i class="fa-solid fa-home"></i></span>
+            </div>
+            <div class="form__inner l-flex-column">
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Check-in" />
+                <span class="form__icon"><i class="fa-solid fa-car"></i></span>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Check-out" />
+                <span class="form__icon"><i class="fa-solid fa-mobile"></i></span>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Guest" />
+                <span class="form__icon"><i class="fa-solid fa-user"></i></span>
+              </div>
+            </div>
+            <button class="btn btn--sm btn--primary form__btn l-flex-row">
+              <span class=""><i class="fa-solid fa-search"></i></span>
+              <span>Search</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Similar Stays Section  -->
+    <section class="stays" id="stays">
+      <div class="l-section-container">
+        <div class="l-flex-row u-space-between u-align-center stays__header">
+          <h3 class="stays__subhead property__subhead">
+            <span class="stays__subhead--small">Stays nearby:</span>Toronto Ontario
+          </h3>
+          <div class="stays__tab l-flex-row">
+            <div>
+              <input type="radio" id="grid" name="tab" class="stays__input" checked>
+              <label for="grid" class="stays__input-label">
+                <span class="stays__icon"><i class="fa-solid fa-border-all"></i></span>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="row" name="tab" class="stays__input">
+              <label for="row" class="stays__input-label">
+                <span class="stays__icon"><i class="fa-solid fa-list"></i></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="stays__inner">
+          <ul class="stays__list l-grid">
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-1.png" alt="Aistream" class="stays__img" />
+                  <button class="btn btn-icon stays__btn">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                  </button>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Missisuaga Aistream</h4>
+                  <p>Missisauga, Ontario, Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span><span class="stays__text">
+                      / night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-2.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <div class="stays__info">
+                <h4 class="stays__title">Urban Loft</h4>
+                <p>Urban Loft</p>
+                <span class="rating">
+                  4.8<i class="fa-solid fa-star rating__star"></i>
+                </span>
+                <p class="stays__price">
+                  <span>$502</span>
+                  <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                    guests</span>
+                </p>
+              </div>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-3.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Forestville Cottages</h4>
+                  <p>Simcoe, Ontario Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-4.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Forestville Cottages</h4>
+                  <p>Simcoe, Ontario Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-5.png" alt="Aistream" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Missisuaga Aistream</h4>
+                  <p>Missisauga, Ontario, Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span><span class="stays__text">
+                      / night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-6.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Urban Loft</h4>
+                  <p>Urban Loft</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-7.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Forestville Cottages</h4>
+                  <p>Simcoe, Ontario Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-8.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Forestville Cottages</h4>
+                  <p>Simcoe, Ontario Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-9.png" alt="Aistream" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Missisuaga Aistream</h4>
+                  <p>Missisauga, Ontario, Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span><span class="stays__text">
+                      / night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-10.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Urban Loft</h4>
+                  <p>Urban Loft</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-11.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Forestville Cottages</h4>
+                  <p>Simcoe, Ontario Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stays__item l-flex-column">
+              <a href="/property.html">
+                <div class="stays__cover">
+                  <img src="assets/images/listing-12.png" alt="Urban Loft" class="stays__img" />
+                  <div class="stays__action l-flex-row u-space-between u-align-center">
+                    <div class="l-flex-row u-align-center superhost stays__label">
+                      <img src="assets/images/superhost.png" alt="supperhost" class="superhost__img stays__label-img" />
+                      <span class="superhost__text">Superhost</span>
+                    </div>
+                    <button class="btn btn-icon stays__btn">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="stays__info">
+                  <h4 class="stays__title">Forestville Cottages</h4>
+                  <p>Simcoe, Ontario Canada</p>
+                  <span class="rating">
+                    4.8<i class="fa-solid fa-star rating__star"></i>
+                  </span>
+                  <p class="stays__price">
+                    <span>$502</span>
+                    <span class="stays__text">/ night | <i class="fa-regular fa-user"></i> 2
+                      guests</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section  -->
+    <section class="footer">
+      <div class="l-section-container">
+        <div class="footer__wrapper">
+          <div class="footer__header l-grid">
+            <div class="footer__nav l-grid">
+              <h4 class="footer__title">Support</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Help Center</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">AirCover</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Combating discrimination</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Supporting people with disabilities</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Cencellation options</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Report neighbourhood concern</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav l-grid">
+              <h4 class="footer__title">Hosting</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Local home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Cover for hosts</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Hosting resources</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Community forum</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Hosting responsibly</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav l-grid">
+              <h4 class="footer__title">Localhost</h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Newsroom</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">New Features</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Careers</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Investres</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Gift cards</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__info l-flex-column">
+          <p class="footer__text">
+            © 2023 Localhost, Inc. All Rights Reserved
+          </p>
+          <ul class="footer__info-list l-flex-column">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- JS section  -->
+  <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
